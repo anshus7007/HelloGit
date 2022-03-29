@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColorSecondary="@android:color/black">
+            >
+            <ImageView
+                android:id="@+id/backToRepo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Details"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/OpenBrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+            <ImageView
+                android:id="@+id/Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/repo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        android:text="Track your favourite repo"
+        android:textColor="#000000"
+        android:textSize="19sp"
+
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/repo_description"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabBranches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branches" />
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIssues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issues" />
+    </com.google.android.material.tabs.TabLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"/>
+
+
+
+</RelativeLayout>

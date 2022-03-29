@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CommitsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColorSecondary="@android:color/black">
+            <ImageView
+                android:id="@+id/backToBranches"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/Commits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Commits"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/BranchName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="BranchName"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>
