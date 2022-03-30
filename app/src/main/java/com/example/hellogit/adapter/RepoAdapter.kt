@@ -37,7 +37,7 @@ class RepoAdapter(val context: Context,
         holder.share.setOnClickListener{
             val intent= Intent()
             intent.action=Intent.ACTION_SEND
-            intent.putExtra(Intent.EXTRA_TEXT,"Hey Check out this Repo:${currItem.repo_name}")
+            intent.putExtra(Intent.EXTRA_TEXT,"Hey Check out this Repo:${currItem.repo_name}::${"https://github.com/repos/${currItem.owner}/${currItem.repo_name}"}")
             intent.type="text/plain"
             context.startActivity(Intent.createChooser(intent,"Share To:"))
         }
