@@ -21,7 +21,7 @@
             android:textColorSecondary="@android:color/black">
             >
             <ImageView
-                android:id="@+id/backToRepo"
+                android:id="@+id/backToMain"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
 
@@ -62,6 +62,8 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
+        android:layout_margin="10dp"
+        android:padding="5dp"
         android:id="@+id/repo_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,8 +1,8 @@
 package com.example.hellogit.GitRepository
 
 
-import com.example.hellogit.db.GitDB
-import com.example.hellogit.db.entity.Git
+import com.example.hellogit.db.db1.dao.GitDB
+import com.example.hellogit.db.db1.dao.entity.Git
 
 class GitRepository(private val db: GitDB) {
 
@@ -11,4 +11,6 @@ class GitRepository(private val db: GitDB) {
     suspend fun delete(item: Git)= db.getGitDao().delete(item)
 
     fun getAllRepos() = db.getGitDao().getAllRepos()
+    fun getRepoById(repoId:Int) = db.getGitDao().getRepoById(repoId)
+
 }

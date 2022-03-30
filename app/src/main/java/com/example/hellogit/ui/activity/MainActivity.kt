@@ -16,24 +16,30 @@ import com.example.hellogit.GitViewModel.GitView
 import com.example.hellogit.GitViewModelFactory.GitViewModelFactory
 import com.example.hellogit.R
 import com.example.hellogit.adapter.RepoAdapter
-import com.example.hellogit.db.GitDB
-import com.example.hellogit.db.entity.Git
+import com.example.hellogit.db.db1.dao.GitDB
+import com.example.hellogit.db.db1.dao.entity.Git
 import androidx.recyclerview.widget.RecyclerView as RecyclerView1
 
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var addRepoIcon: ImageView
     lateinit var addRepo: Button
     lateinit var repo_recycler: RecyclerView1
     lateinit var repo_adapter: RepoAdapter
     lateinit var AddButton:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         addRepoIcon=findViewById(R.id.addRepoIcon)
         addRepo=findViewById(R.id.AddRepo)
         repo_recycler=findViewById(R.id.repo_recycler)
         AddButton=findViewById(R.id.AddRepo)
+
+
         val database = GitDB(this)
         val repository = GitRepository(database)
         val factory = GitViewModelFactory(repository)
@@ -62,7 +68,6 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.tv1).visibility = View.VISIBLE
                 findViewById<Button>(R.id.AddRepo).visibility= View.VISIBLE
             }
-//            repo_adapter.size=it.size
             repo_adapter.notifyDataSetChanged()
         })
         addRepoIcon.setOnClickListener {

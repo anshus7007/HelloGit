@@ -4,11 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.185" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/drawable-v24/owner.xml" value="0.185" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/activity_commits.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/activity_custom_dialog_fragment.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/activity_details.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/branch_single_row.xml" value="0.25" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/commits_single_row.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/fragment_branch.xml" value="0.2359375" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/fragment_issues.xml" value="0.25" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/issues_single_row.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/HelloGit/app/src/main/res/layout/repo_single_row.xml" value="0.25" />
       </map>
     </option>

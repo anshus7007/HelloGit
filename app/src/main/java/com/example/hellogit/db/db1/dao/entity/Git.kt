@@ -1,4 +1,4 @@
-package com.example.hellogit.db.entity
+package com.example.hellogit.db.db1.dao.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -15,6 +15,8 @@ data class Git(
 
     @ColumnInfo(name="description")
     var description:String
+
+
 
 
 )

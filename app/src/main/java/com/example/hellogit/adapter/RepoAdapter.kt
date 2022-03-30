@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 import com.example.hellogit.GitViewModel.GitView
 import com.example.hellogit.R
-import com.example.hellogit.db.entity.Git
+import com.example.hellogit.db.db1.dao.entity.Git
 import com.example.hellogit.ui.activity.DetailsActivity
 import com.example.hellogit.util.ConnectionManager
 
